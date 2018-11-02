@@ -1,8 +1,6 @@
 import java.util.HashSet;
 import java.util.Stack;
 
-import static com.company.Parser.Scope;
-
 public class SymbolTable {
 
     private Stack<HashSet<String>> table; // symbol table is stack: scope of hashsets: variables
@@ -117,3 +115,5 @@ public class SymbolTable {
         }
     }
 }
+
+enum Scope {GLOBAL, CURRENT, NONE, GIVEN}
