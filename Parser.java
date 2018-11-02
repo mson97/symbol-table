@@ -128,7 +128,7 @@ public class Parser {
         mustbe(TK.ENDIF);
     }
 
-    enum Scope {GLOBAL, CURRENT, NONE, GIVEN}
+
 
     private void ref_id() {
         int scope = -1;
